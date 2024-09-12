@@ -1,0 +1,21 @@
+body {
+  font-family: "Noto Sans KR";
+  background-color: #eee;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.info {
+  font-size: 14px;
+  color: #999;
+}
+p {
+  text-align: justify;
+}
+.container {
+  width: 640px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 30px;
+}
