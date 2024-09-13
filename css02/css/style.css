@@ -1,0 +1,40 @@
+.wrap {
+  font-size: 0;
+  text-align: center;
+}
+.wrap div {
+  border: 1px solid #f00;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.wrap02 {
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrap02 div {
+  border: 1px solid #00f;
+  width: 100px;
+  height: 100px;
+}
+
+/* 
+  tag는 특성상 block 과 inline으로 나눈다
+  block은 영역을 나눌때 쓴다.
+  대표적인 tag로 
+  div, li, ul,ol,dl,section,article,nav, 
+  header, footer
+  등등이 있다.
+  inline태그는 글자처럼 취급된다.
+  그래서 넓이,높이 설정을 할 수 없다.
+  대표적인 tag로 
+  span, a, strong,em,input,img  등등이 있다.
+  
+*/
