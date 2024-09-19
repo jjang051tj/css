@@ -1,0 +1,22 @@
+header {
+  display: flex;
+}
+header h1 {
+  position: absolute;
+  left: 0;
+}
+header h1 a {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  padding: 0 20px;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul a {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  padding: 0 30px;
+}
