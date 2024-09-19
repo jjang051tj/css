@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/t4k.css" />
   </head>
   <body>
@@ -13,11 +19,25 @@
       </h1>
       <nav>
         <ul>
-          <li><a href="">브랜드</a></li>
-          <li><a href="">모델</a></li>
-          <li><a href="">구매</a></li>
-          <li><a href="">서비스</a></li>
-          <li><a href="">고객지원</a></li>
+          <li>
+            <a href="" class="depth01">브랜드</a>
+            <ul class="depth02">
+              <li><a href="">BYD 소개 </a></li>
+              <li><a href=""> GSG 소개</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="" class="depth01">모델</a>
+            <ul class="depth02">
+              <li><a href="">T4K</a></li>
+              <li><a href="">T4K 특장</a></li>
+              <li><a href="">가격</a></li>
+            </ul>
+          </li>
+          <li><a href="" class="depth01">구매</a></li>
+          <li><a href="" class="depth01">서비스</a></li>
+          <li><a href="" class="depth01">고객지원</a></li>
         </ul>
       </nav>
       <div class="util-menu">
@@ -31,7 +51,7 @@
       </div>
     </header>
     <div>
-      <video src="video/video.mp4" class="video"></video>
+      <video src="video/video.mp4" class="video" autoplay muted loop></video>
     </div>
   </body>
 </html>

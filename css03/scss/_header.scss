@@ -1,5 +1,10 @@
 header {
   display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  z-index: 999;
   h1 {
     position: absolute;
     left: 0;
@@ -7,18 +12,48 @@ header {
       display: flex;
       height: 80px;
       align-items: center;
-      padding: 0 20px;
     }
   }
   nav {
+    > ul {
+      display: flex;
+      li {
+        &:hover {
+          .depth02 {
+            display: block;
+            background-color: #fff;
+            border-radius: 5px;
+            color: #333;
+          }
+        }
+        .depth01 {
+          display: flex;
+          height: 80px;
+          align-items: center;
+          padding: 0 30px;
+          font-weight: 600;
+          font-size: 18px;
+        }
+
+        .depth02 {
+          display: none;
+          li {
+            a {
+              display: flex;
+              justify-content: center;
+              padding: 10px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .util-menu {
+    right: 0;
+    position: absolute;
+    display: none;
     ul {
       display: flex;
-      a {
-        display: flex;
-        height: 80px;
-        align-items: center;
-        padding: 0 30px;
-      }
     }
   }
 }
