@@ -1,3 +1,8 @@
+:root {
+  --transition-sec: 0.75s;
+  --hover-color: #333;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +29,8 @@ header {
   color: #fff;
   /* background-color: #fff; */
   width: 100%;
+  height: 80px;
+  transition: all var(--transition-sec) ease;
   /* left: 100px;
   top: 500px; */
 }
@@ -36,6 +43,7 @@ header h1 a {
   height: 80px;
   align-items: center;
   padding: 0 20px;
+  transition: color var(--transition-sec) ease;
 }
 header nav ul {
   display: flex;
@@ -48,7 +56,23 @@ header nav ul li a {
   text-transform: uppercase;
   font-weight: 500;
   padding: 0 30px;
+  transition: color var(--transition-sec) ease;
 }
+header:hover {
+  background-color: #fff;
+  height: 300px;
+}
+header:hover h1 a {
+  color: var(--hover-color);
+}
+header:hover nav ul li a {
+  color: var(--hover-color);
+}
+header:hover .util-menu a {
+  color: var(--hover-color);
+  border-color: #ccc;
+}
+
 header .util-menu {
   position: absolute;
   right: 0;
@@ -66,6 +90,7 @@ header .util-menu a {
   border: 1px solid rgba(255, 255, 255, 0.5);
   margin: 0 5px;
   font-size: 14px;
+  transition: color 0.25s ease;
 }
 .video {
   width: 100%;
