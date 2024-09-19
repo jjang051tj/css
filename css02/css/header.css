@@ -7,6 +7,7 @@ body {
   font-family: "Noto Sans KR", "돋움", "sans-serif";
   background-color: #eee;
   color: #333;
+  height: 2000px;
 }
 a {
   text-decoration: none;
@@ -15,29 +16,20 @@ a {
 ul {
   list-style: none;
 }
-
 header {
-  background-color: #fff;
-  margin: 10px;
-  border-radius: 15px;
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  z-index: 999;
+  color: #fff;
+  /* background-color: #fff; */
+  width: 100%;
+  /* left: 100px;
+  top: 500px; */
 }
 header nav ul {
   display: flex;
-  text-transform: uppercase;
-  font-weight: 700;
 }
-header nav ul li a {
-  height: 100px;
-  /* border: 1px solid #000; */
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-}
-header h1 a {
-  display: flex;
-  align-items: center;
-  height: 100px;
-  align-items: center;
+.video {
+  width: 100%;
 }

@@ -1,0 +1,29 @@
+.wrap {
+  /* height: 500px; */
+  /* width: 250px; */
+  border: 1px solid #f00;
+  display: flex;
+  flex-wrap: wrap;
+
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+  /* align-content: center; */
+  /* justify-content: space-evenly; */
+  /* flex-direction: row; */
+}
+.wrap div {
+  border: 1px solid #000;
+  width: 30%;
+  flex-grow: 1;
+  /* flex-basis: 100px;
+  flex-grow: 0; */
+  /* width: 100px; */
+  /* height: 100px; */
+}
+.wrap .menu {
+  width: 150px;
+  flex-shrink: 0;
+}
+.wrap .last {
+  flex-grow: 1;
+}
