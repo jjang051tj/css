@@ -1,0 +1,23 @@
+:root {
+  --transition-sec: 0.75s;
+  --hover-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", "돋움", "sans-serif";
+  background-color: #eee;
+  color: #333;
+  height: 2000px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
