@@ -3,19 +3,22 @@
   width: 300px;
   //border: 1px solid #f00;
   overflow: hidden;
+  margin: 0 auto;
+  position: relative;
   .img-box {
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid #ccc;
-  }
-  img {
-    box-sizing: border-box;
-    width: 100%;
-    transition: all 0.25s ease;
-    &:hover {
-      transform: scale(1.2);
+    img {
+      box-sizing: border-box;
+      width: 100%;
+      transition: all 0.25s ease;
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
+
   .info {
     text-align: center;
     .desc {
@@ -29,5 +32,82 @@
         font-weight: 800;
       }
     }
+  }
+  .rank {
+    width: 40px;
+    height: 40px;
+    background-color: #00c01e;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+  }
+}
+
+.item02 {
+  width: 300px;
+  display: flex;
+  position: relative;
+
+  .img-box {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    img {
+      box-sizing: border-box;
+      width: 100%;
+      transition: all 0.25s ease;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .info {
+    margin-left: 15px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 30px;
+    box-sizing: border-box;
+    .desc {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #999;
+      height: 3em;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .price-box {
+      .price {
+        font-size: 20px;
+        font-weight: 800;
+      }
+    }
+  }
+  .rank {
+    background-color: #00c01e;
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 115px;
+    padding: 5px 10px;
+    top: 0;
   }
 }
