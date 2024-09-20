@@ -5,6 +5,10 @@ header {
   width: 100%;
   color: #fff;
   z-index: 999;
+  // background-image: url("../images/sns.png");
+  // background-repeat: no-repeat;
+  // background-position: 100px 0;
+  // background-size: 100%;
   h1 {
     position: absolute;
     left: 0;
@@ -64,9 +68,34 @@ header {
   .util-menu {
     right: 0;
     position: absolute;
-    display: none;
+    //display: none;
     ul {
       display: flex;
+      li {
+        a {
+          display: block;
+          width: 36px;
+          height: 36px;
+          border: 1px solid #f00;
+          overflow: hidden;
+          //font-size: 0;
+          text-indent: -1000px;
+          background-image: url("../images/sns.png");
+          background-size: 500%;
+        }
+        &:nth-child(1) a {
+          background-position: 0 0;
+        }
+        &:nth-child(2) a {
+          background-position: 25% 0;
+        }
+        &:nth-child(3) a {
+          background-position: 50% 0;
+        }
+        &:nth-child(4) a {
+          background-position: 75% 0;
+        }
+      }
     }
   }
 }
