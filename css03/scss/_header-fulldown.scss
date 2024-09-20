@@ -5,10 +5,18 @@ header {
   width: 100%;
   color: #fff;
   height: 80px;
-  border-bottom: 1px solid #fff;
+  //border-bottom: 1px solid #fff;
   overflow: hidden;
   z-index: 999;
   transition: all 0.5s ease;
+  .bottom-line {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+  }
   &:hover {
     color: #333;
     height: 350px;
