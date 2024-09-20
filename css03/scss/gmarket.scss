@@ -1,0 +1,33 @@
+@import "default";
+.item {
+  width: 300px;
+  //border: 1px solid #f00;
+  overflow: hidden;
+  .img-box {
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+  img {
+    box-sizing: border-box;
+    width: 100%;
+    transition: all 0.25s ease;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  .info {
+    text-align: center;
+    .desc {
+      font-size: 14px;
+      color: #999;
+    }
+    .price-box {
+      margin-top: 10px;
+      .price {
+        font-size: 20px;
+        font-weight: 800;
+      }
+    }
+  }
+}
