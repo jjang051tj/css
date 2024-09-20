@@ -66,22 +66,41 @@ header {
     }
   }
   .util-menu {
+    height: 80px;
     right: 0;
     position: absolute;
     //display: none;
+    display: flex;
+    align-items: center;
+    > a {
+      background-color: #fff;
+      border-radius: 100px;
+      color: #333;
+      height: 36px;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+    }
     ul {
       display: flex;
+
       li {
         a {
           display: block;
           width: 36px;
           height: 36px;
-          border: 1px solid #f00;
+          //border: 1px solid #f00;
           overflow: hidden;
-          //font-size: 0;
+          font-size: 0;
           text-indent: -1000px;
           background-image: url("../images/sns.png");
           background-size: 500%;
+          transition: all 0.25s ease;
+        }
+        &:nth-child(1):hover a {
+          background-position: 0 33.33%;
         }
         &:nth-child(1) a {
           background-position: 0 0;
