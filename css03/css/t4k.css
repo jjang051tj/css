@@ -42,12 +42,12 @@ header nav > ul li {
   position: relative;
 }
 header nav > ul li:hover .depth02 {
-  display: block;
   background-color: #fff;
   border-radius: 5px;
   color: #333;
   transform: translateY(0);
   opacity: 1;
+  pointer-events: auto;
 }
 header nav > ul li .depth01 {
   display: flex;
@@ -58,11 +58,14 @@ header nav > ul li .depth01 {
   font-size: 18px;
 }
 header nav > ul li .depth02 {
+  position: absolute;
   background-color: #fff;
   border-radius: 5px;
   color: #333;
+  width: 100%;
   transform: translateY(30px);
   opacity: 0;
+  pointer-events: none;
   transition: all 0.5s ease;
 }
 header nav > ul li .depth02 li a {
