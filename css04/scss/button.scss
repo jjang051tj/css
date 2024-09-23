@@ -1,5 +1,16 @@
 @import "default";
 
+@mixin longshadow() {
+  $shadow: "";
+  @for $i from 1 through 40 {
+    //1px 1px 0 rgba(0, 0, 0, 1)
+    $shadow: $shadow + $i + "px " + $i + "px 0 rgba(0, 0, 0, 1)"+",";
+  }
+  $shadow: $shadow + "100px 100px 0 rgba(0,0,0,1);";
+  $shadow: unquote($shadow);
+  text-shadow: $shadow;
+}
+
 button {
   border: none;
   padding: 15px 50px;
@@ -9,12 +20,14 @@ button {
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
+  overflow: hidden;
   //box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 1), 2px 2px 0 rgba(0, 0, 0, 1),
-    3px 3px 0 rgba(0, 0, 0, 1), 4px 4px 0 rgba(0, 0, 0, 1),
-    5px 5px 0 rgba(0, 0, 0, 1), 6px 6px 0 rgba(0, 0, 0, 1),
-    7px 7px 0 rgba(0, 0, 0, 1), 8px 8px 0 rgba(0, 0, 0, 1);
-  //개발자는 반복을 싫어한다.
+  // text-shadow: 1px 1px 0 rgba(0, 0, 0, 1), 2px 2px 0 rgba(0, 0, 0, 1),
+  //   3px 3px 0 rgba(0, 0, 0, 1), 4px 4px 0 rgba(0, 0, 0, 1),
+  //   5px 5px 0 rgba(0, 0, 0, 1), 6px 6px 0 rgba(0, 0, 0, 1),
+  //   7px 7px 0 rgba(0, 0, 0, 1), 8px 8px 0 rgba(0, 0, 0, 1);
+  // //개발자는 반복을 싫어한다.
+  @include longshadow();
   transition: all 0.25s ease;
 
   &:hover {
