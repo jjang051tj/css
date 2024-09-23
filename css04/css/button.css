@@ -57,6 +57,13 @@ body .slogan .programming {
   font-weight: 900;
 }
 
+.programmer {
+  width: 200px;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+}
+
 button {
   border: none;
   padding: 15px 50px;

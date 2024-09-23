@@ -1,15 +1,8 @@
 @import "default";
+@import "mixin";
 //scss 에서 함수 만들어 쓰는 방법
 //longshadow(40,rgba(0,0,0,1))
-@mixin longShadow($end, $shadowColor) {
-  $shadow: "";
-  @for $i from 1 through $end - 1 {
-    $shadow: $shadow + $i + "px " + $i + "px 0 " + $shadowColor + ",";
-  }
-  $shadow: $shadow + $end + "px " + $end + "px 0 " + $shadowColor + ";";
-  $shadow: unquote($shadow);
-  text-shadow: $shadow;
-}
+
 body {
   height: 100vh;
   background-color: #666;
@@ -48,7 +41,12 @@ body {
     }
   }
 }
-
+.programmer {
+  width: 200px;
+  position: fixed;
+  right: 00px;
+  bottom: 00px;
+}
 button {
   $bgColor: rgb(15, 187, 244);
   border: none;
