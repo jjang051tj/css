@@ -18,6 +18,14 @@ body {
   font-family: "Noto Sans KR", "돋움", sans-serif;
 }
 
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.material-symbols-outlined.fill {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
 body {
   height: 100vh;
   background-color: #666;

@@ -7,3 +7,7 @@
   $shadow: unquote($shadow);
   text-shadow: $shadow;
 }
+@mixin pseudoIcon($icon) {
+  font-family: "Material Symbols Outlined";
+  content: $icon;
+}

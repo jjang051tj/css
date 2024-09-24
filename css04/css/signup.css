@@ -27,110 +27,73 @@ body {
 }
 
 body {
+  background-color: #333;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
-.login {
+.signup {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 30px 20px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  width: 340px;
+  align-items: center;
 }
-.login h2 {
-  text-align: center;
+.signup h2 {
+  color: #fff;
   font-size: 36px;
   font-weight: 300;
+  text-transform: capitalize;
+  margin-bottom: 40px;
 }
-.login h2:after {
+.signup div {
+  margin: 5px 0;
+  position: relative;
+}
+.signup div::before {
   font-family: "Material Symbols Outlined";
   content: attr(data-icon);
-  color: #fff;
+  font-size: 28px;
   display: block;
-  height: 50px;
-  border-radius: 10px;
-  background-color: #333;
-}
-.login h2 .line {
-  display: block;
-  height: 10px;
-  background-color: #333;
-  border-radius: 100px;
-  margin-top: 10px;
-}
-.login .avatar {
-  text-align: center;
-  margin: 50px 0;
-}
-.login .avatar img {
-  width: 120px;
-}
-.login .input-box {
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid #ccc;
-  position: relative;
-  margin-bottom: 30px;
-}
-.login .input-box label {
+  color: #ffd728;
   position: absolute;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  width: 100%;
-  height: 100%;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
 }
-.login .input-box label:before {
-  content: attr(data-label);
-  display: block;
-  position: absolute;
-  top: 15px;
-  left: 5px;
-  width: 100%;
-  font-size: 18px;
-  transition: all 0.25s ease;
-}
-.login .input-box label:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 3px;
-  background-color: #f00;
-  bottom: -1px;
-  transition: all 0.25s ease;
-}
-.login .input-box input {
-  font-size: 16px;
+.signup div input {
+  border: none;
   outline: none;
-  border: none;
-  padding: 15px 5px;
-  position: relative;
+  font-size: 18px;
+  padding: 15px 15px 15px 60px;
+  font-weight: 600;
+  background-color: #111;
+  color: #fff;
+  border-radius: 3px;
   display: block;
-}
-.login .input-box input:focus + label:before {
-  top: -20px;
-  font-size: 14px;
-  color: #ccc;
-}
-.login .input-box input:focus + label:after {
   width: 100%;
+  box-sizing: border-box;
 }
-.login button {
-  margin-top: 50px;
+.signup button {
+  margin-top: 5px;
   border: none;
-  border-radius: 50px;
+  border-radius: 5px;
   background-color: #0dcdfd;
   color: #fff;
   padding: 15px;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 15px;
   overflow: hidden;
+  width: 50%;
   text-shadow: 1px 1px 0 #02abd5,2px 2px 0 #02abd5,3px 3px 0 #02abd5,4px 4px 0 #02abd5,5px 5px 0 #02abd5,6px 6px 0 #02abd5,7px 7px 0 #02abd5,8px 8px 0 #02abd5,9px 9px 0 #02abd5,10px 10px 0 #02abd5,11px 11px 0 #02abd5,12px 12px 0 #02abd5,13px 13px 0 #02abd5,14px 14px 0 #02abd5,15px 15px 0 #02abd5,16px 16px 0 #02abd5,17px 17px 0 #02abd5,18px 18px 0 #02abd5,19px 19px 0 #02abd5,20px 20px 0 #02abd5,21px 21px 0 #02abd5,22px 22px 0 #02abd5,23px 23px 0 #02abd5,24px 24px 0 #02abd5,25px 25px 0 #02abd5,26px 26px 0 #02abd5,27px 27px 0 #02abd5,28px 28px 0 #02abd5,29px 29px 0 #02abd5,30px 30px 0 #02abd5,31px 31px 0 #02abd5,32px 32px 0 #02abd5,33px 33px 0 #02abd5,34px 34px 0 #02abd5,35px 35px 0 #02abd5,36px 36px 0 #02abd5,37px 37px 0 #02abd5,38px 38px 0 #02abd5,39px 39px 0 #02abd5,40px 40px 0 #02abd5;;
   cursor: pointer;
 }
-.login button:active {
+.signup button:active {
   background-color: #0182a3;
   text-shadow: 1px 1px 0 #016e89,2px 2px 0 #016e89,3px 3px 0 #016e89,4px 4px 0 #016e89,5px 5px 0 #016e89,6px 6px 0 #016e89,7px 7px 0 #016e89,8px 8px 0 #016e89,9px 9px 0 #016e89,10px 10px 0 #016e89,11px 11px 0 #016e89,12px 12px 0 #016e89,13px 13px 0 #016e89,14px 14px 0 #016e89,15px 15px 0 #016e89,16px 16px 0 #016e89,17px 17px 0 #016e89,18px 18px 0 #016e89,19px 19px 0 #016e89,20px 20px 0 #016e89,21px 21px 0 #016e89,22px 22px 0 #016e89,23px 23px 0 #016e89,24px 24px 0 #016e89,25px 25px 0 #016e89,26px 26px 0 #016e89,27px 27px 0 #016e89,28px 28px 0 #016e89,29px 29px 0 #016e89,30px 30px 0 #016e89,31px 31px 0 #016e89,32px 32px 0 #016e89,33px 33px 0 #016e89,34px 34px 0 #016e89,35px 35px 0 #016e89,36px 36px 0 #016e89,37px 37px 0 #016e89,38px 38px 0 #016e89,39px 39px 0 #016e89,40px 40px 0 #016e89;;
 }

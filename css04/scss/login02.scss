@@ -16,6 +16,26 @@ body {
     text-align: center;
     font-size: 36px;
     font-weight: 300;
+    //pseudo element
+    &:after {
+      // font-family: "Material Symbols Outlined";
+      // font-size: 24px;
+      // content: "search";
+      @include pseudoIcon(attr(data-icon));
+      color: #fff;
+      display: block;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #333;
+    }
+
+    .line {
+      display: block;
+      height: 10px;
+      background-color: #333;
+      border-radius: 100px;
+      margin-top: 10px;
+    }
   }
   .avatar {
     text-align: center;
