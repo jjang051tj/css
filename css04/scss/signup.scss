@@ -49,6 +49,16 @@ body {
       display: block;
       width: 100%;
       box-sizing: border-box; //padding + border 포함해서 넓이 잡아준다.
+      &:focus::placeholder {
+        opacity: 0;
+      }
+      &::placeholder {
+        color: #fff;
+        font-weight: 300;
+        opacity: 0.5;
+        text-transform: lowercase;
+        transition: all 0.25s ease;
+      }
     }
   }
   button {

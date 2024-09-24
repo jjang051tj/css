@@ -79,6 +79,27 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
+.signup div input:focus::-moz-placeholder {
+  opacity: 0;
+}
+.signup div input:focus::placeholder {
+  opacity: 0;
+}
+.signup div input::-moz-placeholder {
+  color: #fff;
+  font-weight: 300;
+  opacity: 0.5;
+  text-transform: lowercase;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.signup div input::placeholder {
+  color: #fff;
+  font-weight: 300;
+  opacity: 0.5;
+  text-transform: lowercase;
+  transition: all 0.25s ease;
+}
 .signup button {
   margin-top: 5px;
   border: none;
