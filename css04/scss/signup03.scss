@@ -114,6 +114,26 @@ body {
       transition: all 0.25s ease;
     }
   }
+  .btn-signup {
+    border: none;
+    height: 60px;
+    border-radius: 10px;
+    //background-color: #0385dc;
+    background-image: linear-gradient(
+      90deg,
+      rgb(0, 87, 217) 0%,
+      // rgb(104, 194, 13) 20%,
+      // rgb(191, 124, 0) 40%,
+      // rgb(173, 19, 201) 60%,
+      // rgb(206, 71, 71) 80%,
+      rgb(0, 207, 210) 100%
+    );
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    overflow: hidden;
+    @include longShadow(50, darken(rgb(0, 87, 217), 5));
+  }
 }
 .checkbox-wrapper-01 {
   margin-top: 20px;
