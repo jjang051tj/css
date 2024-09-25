@@ -3,7 +3,7 @@
 
 body {
   background-color: #fff;
-  height: 100vh;
+  //height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -133,6 +133,28 @@ body {
     font-size: 18px;
     overflow: hidden;
     @include longShadow(50, darken(rgb(0, 87, 217), 5));
+  }
+  .social-login-box {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding-top: 30px;
+    gap: 10px;
+
+    button {
+      box-sizing: border-box;
+      flex-basis: calc(50% - 5px);
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      background: none;
+      img {
+        width: 100%;
+        vertical-align: top;
+      }
+    }
   }
 }
 .checkbox-wrapper-01 {

@@ -225,7 +225,6 @@ button {
 
 body {
   background-color: #fff;
-  height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -348,6 +347,27 @@ body {
   font-size: 18px;
   overflow: hidden;
   text-shadow: 1px 1px 0 #004dc0,2px 2px 0 #004dc0,3px 3px 0 #004dc0,4px 4px 0 #004dc0,5px 5px 0 #004dc0,6px 6px 0 #004dc0,7px 7px 0 #004dc0,8px 8px 0 #004dc0,9px 9px 0 #004dc0,10px 10px 0 #004dc0,11px 11px 0 #004dc0,12px 12px 0 #004dc0,13px 13px 0 #004dc0,14px 14px 0 #004dc0,15px 15px 0 #004dc0,16px 16px 0 #004dc0,17px 17px 0 #004dc0,18px 18px 0 #004dc0,19px 19px 0 #004dc0,20px 20px 0 #004dc0,21px 21px 0 #004dc0,22px 22px 0 #004dc0,23px 23px 0 #004dc0,24px 24px 0 #004dc0,25px 25px 0 #004dc0,26px 26px 0 #004dc0,27px 27px 0 #004dc0,28px 28px 0 #004dc0,29px 29px 0 #004dc0,30px 30px 0 #004dc0,31px 31px 0 #004dc0,32px 32px 0 #004dc0,33px 33px 0 #004dc0,34px 34px 0 #004dc0,35px 35px 0 #004dc0,36px 36px 0 #004dc0,37px 37px 0 #004dc0,38px 38px 0 #004dc0,39px 39px 0 #004dc0,40px 40px 0 #004dc0,41px 41px 0 #004dc0,42px 42px 0 #004dc0,43px 43px 0 #004dc0,44px 44px 0 #004dc0,45px 45px 0 #004dc0,46px 46px 0 #004dc0,47px 47px 0 #004dc0,48px 48px 0 #004dc0,49px 49px 0 #004dc0,50px 50px 0 #004dc0;;
+}
+.signup .social-login-box {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+  padding-top: 30px;
+  gap: 10px;
+}
+.signup .social-login-box button {
+  box-sizing: border-box;
+  flex-basis: calc(50% - 5px);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background: none;
+}
+.signup .social-login-box button img {
+  width: 100%;
+  vertical-align: top;
 }
 
 .checkbox-wrapper-01 {
