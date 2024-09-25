@@ -14,48 +14,85 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="stylesheet" href="css/signup03.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script
       src="https://kit.fontawesome.com/7946993760.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <div class="checkbox-wrapper-01">
-      <input type="checkbox" id="check01" />
-      <label for="check01">체크박스01</label>
-
-      <!-- <label>
-        <input type="checkbox" id="check01" />
-        <span></span>
-      </label> -->
-    </div>
-    <div class="signup">
-      <h1>
+    <div class="container-md border border-black border-2 py-5">
+      <h1 class="text-center">
         <a href="">메가스터디 아카데미</a>
       </h1>
-      <h2>회원가입</h2>
-      <input type="text" placeholder="이름(실명)" />
-      <input type="text" placeholder="이메일 주소" />
-      <input
-        type="password"
-        placeholder="비밀번호 (8~20자 이내 영문+숫자+특수문자)"
-      />
-      <input type="password" placeholder="비밀번호 확인" />
-      <div class="tel">
-        <select name="" id="">
-          <option value="">010</option>
-          <option value="">011</option>
-          <option value="">016</option>
-          <option value="">017</option>
-          <option value="">018</option>
-          <option value="">019</option>
-        </select>
-        <input type="text" />
-        <input type="text" />
-        <button>인증번호</button>
+      <h2 class="text-center">회원가입</h2>
+      <div class="mb-2 form-floating">
+        <input
+          type="text"
+          placeholder="이름(실명)"
+          class="form-control"
+          id="user-name"
+        />
+        <label for="user-name">이름 (실명)</label>
       </div>
-      <input type="text" placeholder="인증번호를 입력해주세요" />
+      <div class="mb-2 form-floating">
+        <input
+          type="text"
+          placeholder="이메일 주소"
+          class="form-control"
+          id="user-email"
+        />
+        <label for="user-email">이메일 주소</label>
+      </div>
+      <div class="mb-2 form-floating">
+        <input
+          type="password"
+          placeholder="비밀번호 (8~20자 이내영문+숫자+특수문자)"
+          class="form-control"
+          id="user-pw"
+        />
+        <label for="user-pw">비밀번호</label>
+      </div>
+      <div class="form-floating mb-2">
+        <input
+          type="password"
+          placeholder="비밀번호 확인"
+          class="form-control"
+          id="user-pw-confirm"
+        />
+        <label for="user-pw-confirm">비밀번호 확인</label>
+      </div>
+      <div class="tel row g-2 mb-2">
+        <div class="col-sm">
+          <select name="" id="" class="form-control form-control-lg">
+            <option value="">010</option>
+            <option value="">011</option>
+            <option value="">016</option>
+            <option value="">017</option>
+            <option value="">018</option>
+            <option value="">019</option>
+          </select>
+        </div>
+        <div class="col-sm">
+          <input type="text" class="form-control form-control-lg" />
+        </div>
+        <div class="col-sm">
+          <input type="text" class="form-control form-control-lg" />
+        </div>
+        <div class="col-sm">
+          <button class="btn btn-lg btn-primary w-100">인증번호</button>
+        </div>
+      </div>
+      <div class="form-floating mb-2">
+        <input
+          type="text"
+          placeholder="인증번호를 입력해주세요"
+          id="confirm-number"
+          class="form-control"
+        />
+        <label for="confirm-number">인증번호</label>
+      </div>
       <div class="agree-box">
         <div class="checkbox-wrapper-19">
           <input type="checkbox" id="cbtest-19" />
